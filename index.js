@@ -1,5 +1,42 @@
+// const tutorials = [
+//   'what does the this keyword mean?',
+//   'What is the Constructor OO pattern?',
+//   'implementing Blockchain Web API',
+//   'The Test Driven Development Workflow',
+//   'What is NaN and how Can we Check for it',
+//   'What is the difference between stopPropagation and preventDefault?',
+//   'Immutable State and Pure Functions',
+//   'what is the difference between == and ===?',
+//   'what is the difference between event capturing and bubbling?',
+//   'what is JSONP?'
+// ];
+// // let titleCased = () => {
+// //   return tutorials
+// //   return tutorials.map((tut) => {
+// //     const f = tut.split(" ");
+// //     return f.map((i) => {
+// //       return i.charAt(0).toUpperCase() + i.slice(1);
+// //     }).join(" ");
+// //   })
+// // }
+
+// // let titleCased = () => {
+// //   return tutorials
+// // }
+// const titleCased = () => {
+//   return tutorials
+//   // return tutorials
+//   const updatedTutorials = tutorials.map(tutorial => {
+//     const words = tutorial.split(" ")
+//     const updatedWords = words.map(word =>{
+//       return (word[0].toUpperCase() + word.slice(1))
+//     })
+//     return updatedWords.join(' ')
+//   })
+//   return updatedTutorials
+// }
 const tutorials = [
-  'what does the this keyword mean?',
+  'What does the this keyword mean?',
   'What is the Constructor OO pattern?',
   'implementing Blockchain Web API',
   'The Test Driven Development Workflow',
@@ -11,6 +48,17 @@ const tutorials = [
   'what is JSONP?'
 ];
 
+
+
 const titleCased = () => {
-  return tutorials
+  // return tutorials
+  // return tutorials
+  const updatedTutorials = tutorials.map(tutorial => {
+    const words = tutorial.split(" ")
+    const updatedWords = words.map(word =>{
+      return (word[0].toUpperCase() + word.slice(1))
+    })
+    return updatedWords.join(' ')
+  })
+  return updatedTutorials
 }
